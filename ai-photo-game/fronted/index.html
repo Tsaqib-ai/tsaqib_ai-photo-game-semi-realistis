@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Photo Game Edit - Semi Realistis</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; background: #111; color: #f0f0f0; text-align: center; padding: 30px; }
+    .container { max-width: 800px; margin: auto; background: #222; padding: 20px; border-radius: 15px; }
+    input[type="file"] { margin-top: 15px; background: #333; padding: 10px; border: 2px dashed #555; color: #fff; cursor: pointer; }
+    .generate-btn { margin-top: 20px; background: #28a745; color: white; padding: 10px 20px; border: none; border-radius: 8px; font-size: 16px; cursor: pointer; }
+    .generate-btn:hover { background: #218838; }
+    .image-area { margin-top: 30px; display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; }
+    .image-area img { width: 300px; height: auto; border: 3px solid #444; border-radius: 10px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎮 AI Photo Game Edit - Semi Realistis</h1>
+    <p>Upload fotomu dan klik "Generate AI Edit" untuk hasil semi-realistis!</p>
+    <input type="file" id="upload" accept="image/*" />
+    <br>
+    <button class="generate-btn" id="generateBtn">Generate AI Edit</button>
+
+    <div class="image-area">
+      <div>
+        <h3>Foto Asli</h3>
+        <img id="original" src="" alt="Original" />
+      </div>
+      <div>
+        <h3>Hasil Edit AI</h3>
+        <img id="edited" src="https://via.placeholder.com/300x400?text=Belum+Generate" alt="Edited" />
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
